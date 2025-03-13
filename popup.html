@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open URL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <h3>Open URL in New Window</h3>
+  <input type="text" id="urlInput" placeholder="Enter a URL (e.g., https://example.com)">
+  <input type="text" id="amount" placeholder="Enter the amount of windows to generate (e.g., 8)">
+
+  <div class="checkbox-container">
+    <input type="checkbox" id="monitors">
+    <label for="monitors">All monitors</label>
+  </div>
+
+  <button id="openButton">Generate</button>
+
+  <script src="spaghetti.js"></script>
+</body>
+</html>
